@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg6.png);
+}
+
+.body {
+    width: 80%;
+    margin: auto;
+}
+
+li a:hover {
+    color: red;
+}
+
+.home a {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+
+.nav-links a {
+    color: black;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    border-radius: 5px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.main {
+    width: 400px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.main:hover .photo,
+.main:focus .photo {
+    transform: scale(1.1);
+}
+
+.photo {
+    filter: brightness(60%);
+    transition: all .5s;
+}
+
+.text {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    font-size: 33px;
+    color: white;
+}
+
+.news {
+    display: flex;
+    width: 100%;
+    height: 120px;
+}
+
+.news p {
+    display: flex;
+    flex-grow: 1;
+    font-size: 30px;
+    color: red;
+    align-items: center;
+}
+
+.news .button {
+    display: flex;
+    align-items: center;
+}
+
+button.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.contnews {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.cont {
+    height: 400px;
+}
+
+.news1 {
+    width: 350px;
+}
+
+a h1 {
+    color: black;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+a h1:hover {
+    color: red;
+}
+
+.newsblock1 {
+    width: 350px;
+    height: 170px;
+}
+
+.news2 {
+    width: 300px;
+}
+
+.newsblock2 {
+    width: 300px;
+    height: 250px;
+}
+
+a p {
+    position: relative;
+    top: 10px;
+    color: gray;
+}
+
+a h2 {
+    position: relative;
+    color: black;
+    font-size: 22px;
+    top: 20px;
+}
+
+.news3 {
+    width: 300px;
+}
+
+.newsblock3 {
+    width: 300px;
+    height: 250px;
+}
+
+.news4 {
+    width: 300px;
+}
+
+.newsblock4 {
+    width: 300px;
+    height: 200px;
+}
+
+.invisible {
+    width: 100%;
+    height: 150px;
+}
+
+.footer {
+    background-color: rgb(51, 51, 51);
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+    text-align: start;
+    color: white;
+}
+
+.footer p {
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    a h2 {
+        font-size: 18px;
+    }
+    .container {
+        margin-top: 210px;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: white;
+    }
+    .menu li+li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .footer {
+        font-size: 15px;
+    }
+}
